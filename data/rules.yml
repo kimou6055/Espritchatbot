@@ -1,0 +1,21 @@
+version: "3.1"
+
+rules:
+- rule: No more information_fr
+  steps:
+  - intent: refus
+  - action: utter_no_more_info_fr
+
+- rule: No more information_ang
+  steps:
+  - intent: deny
+  - action: utter_no_more_info_ang
+  
+
+##############################################################################################
+
+responses:
+  utter_no_more_info_fr:
+  - text: "D'accord, N'hésitez pas à me poser d'autres questions."
+  utter_no_more_info_ang:
+  - text: "Ok, feel free to ask me more questions."
